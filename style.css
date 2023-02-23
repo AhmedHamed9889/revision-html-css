@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* start-navabr */
+nav{
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    z-index: 999;
+    
+}
+.start{
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7791b;
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    align-items: center;
+
+}
+.start img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.start div a{
+    margin: 7px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* End-navbar */
+/* <!-- start-intro-page --> */
+.intro{
+    background-image: url("https://raw.githubusercontent.com/galalalmaghraby/HTML-CSS-Responsive/main/assets/background-1.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+   text-align: center;
+    
+}
+.intro h3{
+    color: white;
+    font-size: 40px;    
+    text-align: center;
+    font-family: sans-serif;
+}
+/* <!-- end-intro-page --> */
+
+/* start-menu */
+.menu{
+    background-image: url("https://raw.githubusercontent.com/galalalmaghraby/HTML-CSS-Responsive/main/assets/background-2.jpg");
+    background-size: 100% 100%;
+    height:100vh;
+}
+.menu h1{
+    text-align: center;
+   color: #c7791b;
+    padding: 40px;
+    font-size: 40px;
+
+}
+.parent-menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.parent-menu .food-items{
+    margin: 7px;
+    position: relative;
+    overflow: hidden;
+    transition: all 2s ease;
+
+
+} 
+.parent-menu .food-items img{
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+} 
+.parent-menu .food-items .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c7791b;
+    height: 50px;
+    padding: 20px;
+    position: absolute;
+    bottom:-120px;
+    width: 100%;
+    transition: all 1s ease;
+
+
+}
+.parent-menu .food-items:hover .icons{
+    bottom: 0px;
+}
+.parent-menu .food-items .icons i{
+    font-size: 20px;
+    color: white;
+}
+
+
+/*end-menu */
+/* start-info */
+.info{
+    background-image: url("https://raw.githubusercontent.com/galalalmaghraby/HTML-CSS-Responsive/main/assets/background-3.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.info div{
+max-width: 600px;
+padding-left:60px ;
+/* margin: 50px 60px 0; */
+}
+.info div a{
+    margin: 40px;
+    font-size: 40px;
+    color: #c7791b;
+    border-bottom: #c7791b;
+    text-decoration: none;
+}
+.info div p{
+    color: white;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+/* end-info */
+/* start-delivery */
+.services{
+    background-image: url("https://raw.githubusercontent.com/galalalmaghraby/HTML-CSS-Responsive/main/assets/background-4.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.services h1{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 60px;
+    color: #c7791b;
+    margin-bottom: 60px;
+    font-family: sans-serif;
+}
+.services .adv{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+    cursor: pointer;
+} 
+.services .adv img{
+    width:130px;
+    margin-bottom:50px;
+
+}
+.services .adv p{
+    color: #c7791b;
+    font-size:30px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+/* end-delivery */
+/* start-contact */
+.contact{
+    background-image: url("https://raw.githubusercontent.com/galalalmaghraby/HTML-CSS-Responsive/main/assets/background-5.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.contact h1{
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+    color: #c7791b;
+    font-family: sans-serif;
+  
+}
+.contact .contatc-customer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.contatc-customer div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+    border-radius: 50px;
+    border: none !important;
+   
+}
+.contatc-customer div:focus{
+    outline: none ;
+}
+.contatc-customer div input{
+    margin: 10px;
+    width: 100%
+    height: 60px;
+    padding: 30px;   
+    border-radius: 6px;
+}
+.contatc-customer div input:focus{
+    outline: none !important ;
+}
+.contatc-customer div input.message{
+    height:190px;
+}
+.contatc-customer div input.send{
+    background-color: #23272c;
+    color: #c7791b;
+    font-size: 30px;
+    cursor: pointer;
+    /* transition:1s linear; */  
+    transition: all 1s ease;
+
+}
+.contatc-customer div input.send:hover{
+    background-color: #c7791b;
+    color: #23272c;
+}
+/* end-contact */
+/* footer start */
+footer{
+    background-color: #23272c;
+    height: 60px;
+    /* width: 100%;  */
+    cursor: pointer;
+
+}
+footer .details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    width: 100%;
+    height: 100%;
+}
+footer .details div p{
+    font-size: 20px;
+    color: white;
+
+}
+footer .details div span{
+    color: #c7791b;
+    font-size: 20px;
+}
+footer .details .whatsapp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+footer .details .fa-whatsapp{
+    margin: 10px;
+    font-size: 30px;
+    color: green;
+} 
+/* footer end */
